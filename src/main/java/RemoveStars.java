@@ -6,18 +6,21 @@ public class RemoveStars {
 
         for (char c : s.toCharArray()) {
             if (c == '*') {
+                // En yakın sol karakteri kaldır
                 if (!stack.isEmpty()) {
                     stack.pop();
                 }
             } else {
+                // Yıldız değilse, stack'e ekle
                 stack.push(c);
             }
         }
+        // Stack'teki kalan karakterleri birleştir
         StringBuilder result = new StringBuilder();
-
         for (char c : stack) {
             result.append(c);
         }
+
         return result.toString();
     }
     public static void main(String[] args) {
