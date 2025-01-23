@@ -33,6 +33,7 @@ public class DecodeString {
 
         return currentString.toString();
     }
+
     public static void main(String[] args) {
         DecodeString solution = new DecodeString();
 
