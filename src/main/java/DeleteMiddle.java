@@ -10,9 +10,7 @@ public class DeleteMiddle {
     }
 
     public ListNode deleteMiddle(ListNode head) {
-        if (head == null || head.next == null) {
-            return null; // Eğer tek bir düğüm varsa, liste boş kalır.
-        }
+        if (head == null || head.next == null) return null;
 
         ListNode slow = head;
         ListNode fast = head;
